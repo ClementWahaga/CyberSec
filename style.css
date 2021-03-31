@@ -1,0 +1,55 @@
+body {
+    display: grid;
+    font-family: 'Dosis', sans-serif;
+}
+
+h1 {
+    font-size: 100px;
+    color: gold;
+}
+
+p {
+    color: gold;
+    font-size: 20px;
+}
+
+i {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    justify-items: center;
+    margin-top: 100px;
+    text-align: center;
+    gap: 20px;
+}
+
+span>p {
+    color: #333;
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    justify-content: center;
+    justify-items: center;
+    background-image: url(./Conection\ wallpaper\ by\ Pr1m3r\ -\ c6\ -\ Free\ on\ ZEDGE™.jpg);
+    background-attachment: fixed;
+    height: 400px;
+    text-align: center;
+    background-size: cover;
+}
+
+@media screen and (max-width:425px) {
+    body {
+        display: grid;
+        grid-template-columns: 1, 1fr;
+    }
+    .container {
+        grid-template-columns: 1, 1fr;
+    }
+}
